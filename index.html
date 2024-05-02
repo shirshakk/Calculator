@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="question">
+                <h2>128*34</h2>
+            </div>
+            <div class="answer">
+                <h2>136</h2>
+            </div>
+        </div>
+        <div class="Button">
+            <div class="row">
+                <button class="calculator-btn" onclick="Calculation()">C</button>
+                <button class="calculator-btn" onclick="Calculation()">+/-</button>
+                <button class="calculator-btn" onclick="Calculation()">%</button>
+                <button class="calculator-btn operator" onclick="Calculation()">/</button>
+            </div>
+            <div class="row">
+                <button class="calculator-btn" onclick="Calculation()">7</button>
+                <button class="calculator-btn" onclick="Calculation()">8</button>
+                <button class="calculator-btn" onclick="Calculation()">9</button>
+                <button class="calculator-btn operator" onclick="Calculation()">*</button>         
+            </div>
+            <div class="row">
+                <button class="calculator-btn" onclick="Calculation()">4</button>
+                <button class="calculator-btn" onclick="Calculation()">5</button>
+                <button class="calculator-btn" onclick="Calculation()">6</button>
+                <button class="calculator-btn operator" onclick="Calculation()">-</button>
+            </div>
+            <div class="row">
+                <button class="calculator-btn" onclick="Calculation()">1</button>
+                <button class="calculator-btn" onclick="Calculation()">2</button>
+                <button class="calculator-btn" onclick="Calculation()">3</button>
+                <button class="calculator-btn operator" onclick="Calculation()">+</button>
+            </div>
+            <div class="row">
+                <button class="calculator-btn" onclick="Calculation()">0</button>
+                <button class="calculator-btn" onclick="Calculation()">.</button>
+                <button class="width operator" onclick="Calculation()">=</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Calculation(){
+            let a = document.getElementsByClassName("calculator-btn")
+            let value
+            for (let i = 0; i < a.length; i++) {
+                value=a[i].addEventListener("click",function(){
+                    value = this.textContent;
+                    console.log(value);
+                }) 
+            }
+            
+
+        }
+    </script>
+</body>
+</html>
