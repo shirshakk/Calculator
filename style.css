@@ -49,3 +49,21 @@ body{
 .operator{
     background-color: #3c8ce7;
 }
+.display{
+    border: 4px solid ;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: #939ca3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+.question{
+    text-align: end;
+    height: 20%;
+    font-size: 30px;
+}
+.answer{
+    text-align: end;
+    height: 60%;
+    font-size: 40px;
+}
